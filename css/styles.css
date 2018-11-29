@@ -1,0 +1,1071 @@
+body {
+    font-family: 'open-sans';
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 16px;
+    line-height: 1.25em;
+}
+
+
+/* headings and paragraphs*/
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-size: 1.60em;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 2.5em;
+        /* 2.5x body copy size = 40px */
+        line-height: 1.125;
+    }
+}
+
+@media (min-width: 992px) {
+    h2 {
+        font-size: 3em;
+        /* 3x body copy size = 48px */
+        line-height: 1.05;
+        /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+    }
+}
+
+h3 {
+    font-family: 'open-sans';
+    font-weight: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 992px) {
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+p {
+    font-size: 0.688em;
+    font-family: 'open-sans';
+    color: #acacac;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 992px) {
+    p {
+        font-size: 0.8em;
+    }
+}
+
+p.title {
+    font-family: 'open-sans';
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.750em;
+}
+
+p.bold {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #000;
+}
+
+h2.strikeout {
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+h2.strikeout::after {
+    border-bottom: 1px solid #9e9898;
+    position: absolute;
+    content: "";
+    left: -2%;
+    right: -2%;
+    top: 50%;
+}
+
+
+/* General */
+
+section {
+    padding-top: 30px;
+}
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border-left: 1px solid #e6e4e4;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav {
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.sidenav a{
+    margin: 0px 0px;
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 24px 0;
+    opacity: .7;
+}
+
+.sidenav li {
+    border-bottom: 1px solid #e5e5e5;
+    margin-left: 20px;
+}
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    font-weight: bold;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 28px;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #bebebe;
+}
+
+
+/* Hamburger Menu */
+
+.menu {
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+}
+
+.icon-bar {
+    width: 40px;
+    height: 4px;
+    background-color: #bebebe;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+a.button {
+    color: black;
+    border: 1px solid #ababab;
+    font-weight: bold;
+}
+
+
+/* header */
+
+header {
+    background-image: url('../images/header-large.png');
+    background-size: cover;
+    height: 700px;
+    background-position: center center;
+    position: relative;
+}
+
+
+/* SECTION 1 - DISCOGRAPHY */
+
+#discography h2 {
+    color: #b1857a;
+}
+
+.discography_details {
+    text-align: left;
+}
+
+#discography .year {
+    border-bottom: 1px solid #9e9898;
+    color: #000;
+    font-weight: 600;
+    color: #59595a;
+    margin-top: 60px;
+    padding-bottom: 5px;
+}
+
+#discography .title {
+    margin-bottom: 35px;
+}
+
+#discography .image {
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+}
+
+#discography .play-button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#discography .bottom-bg-image {
+    height: 700px;
+    background-image: url('../images/discography_small.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -200px
+}
+
+
+/* SECTION 2 - CONCERT TOURS */
+
+.concert-bg {
+    position: relative;
+    background-image: url('../images/concert-bg-big.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+#concert-tours h2 {
+    color: #779da6;
+}
+
+.concert-bg .text-left {
+    margin-top: 155px;
+}
+
+#concert-tours .year {
+    color: #000;
+}
+
+#concert-tours .title {
+    margin-bottom: 30px;
+}
+
+#concert-tours .darker-gray {
+    margin-bottom: 40px;
+    color: #acacac;
+    padding-right: 10px;
+}
+
+#concert-tours .fa.fa-chevron-right {
+    margin-left: 15px;
+}
+
+#concert-tours .button {
+    padding: 15px 30px;
+    font-size: 0.688em;
+}
+
+#upcoming-events {
+    text-align: center;
+}
+
+
+/* LATTER COMPOSITIONS */
+
+#latter-compositions {
+    padding-bottom: 30px;
+}
+
+#latter-compositions .strikeout::after {
+    border-bottom: 1px solid #9e9898;
+    position: absolute;
+    content: "";
+    left: -5%;
+    right: -5%;
+    top: 50%;
+}
+
+#latter-compositions .col-md-6 {
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#latter-compositions .text {
+    padding: 10px;
+    background-color: #f5f6f6;
+}
+
+#latter-compositions .box1,
+#latter-compositions .box2,
+#latter-compositions .box3 {
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 15px;
+    padding: 15px;
+}
+
+#latter-compositions .box1:after,
+#latter-compositions .box2:after,
+#latter-compositions .box3:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#latter-compositions .col-md-6.image {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#latter-compositions .buttons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#latter-compositions .button {
+    padding: 10px 10px;
+    font-size: 0.720em;
+}
+
+#latter-compositions .buttons:after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+
+#latter-compositions .icons {
+    font-size: 0.813em;
+    margin-top: 8px;
+    color: #aaabab;
+    margin-left: -20px;
+}
+
+#latter-compositions .icons span {
+    margin-right: 5px;
+}
+
+#latter-compositions .icons i {
+    margin-right: 3px;
+}
+
+.arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f5f6f6;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+
+/* SECTION 4 - SLIDER */
+
+#slider {
+    font-family: 'Dosis', sans-serif;
+    background-image: url('../images/slider-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+    position: relative;
+    
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 25px;
+     opacity: .75;
+    color: #fff;
+}
+
+.transparent-circle {
+  background-color: #fff;
+  -webkit-border-radius:75px;
+  -moz-border-radius:75px;
+}
+
+.active{
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 10px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#slider h3 {
+    color: #fff;
+}
+
+#slider p {
+    width: 65%;
+    margin: 0 auto;
+    color: #798285;
+}
+
+#slider .intro {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slider .intro-text p:first-child {
+    margin-bottom: 50px;
+}
+
+#slider .intro-text {
+    width: 70%;
+    margin: 0 auto 30px;
+}
+
+ol {
+    list-style: none;
+    width: 100%;
+    padding-left: 0px;
+}
+
+ol li {
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+    margin: 30px 12px 0 12px;
+}
+
+
+#slider .intro img {
+    display: inline-block;
+    width: 25px;
+}
+
+
+/* SECTION 5 - NUMBERS */
+
+#new-tracks .number-boxes {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#new-tracks .number-boxes:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#new-tracks .box {
+    height: 325px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#new-tracks .number-boxes .date {
+    margin-top: 8px;
+}
+
+.white-text-uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#new-tracks .box.number-1 {
+    background-image: url('../images/number-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#new-tracks .box.number-2 {
+    background-image: url('../images/number-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#new-tracks .box.number-3 {
+    background-image: url('../images/number-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#new-tracks .box.number-4 {
+    background-image: url('../images/number-4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box.number-5 {
+    background-image: url('../images/number-5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box.number-6 {
+    background-image: url('../images/number-6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* SECTION 5 - UPCOMING-EVENTS */
+
+#upcoming-events {
+    background-image: url(../images/upcoming-events-small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40%;
+    height: 1203px
+}
+
+#upcoming-events h2 {
+    color: #42717e;
+    margin-bottom: 100px;
+}
+
+#upcoming-events .strikeout::after {
+    border-bottom: 1px solid #9e9898;
+    position: absolute;
+    content: "";
+    left: -5%;
+    right: -5%;
+    top: 50%;
+}
+
+#upcoming-events .date {
+    color: #595959;
+    font-weight: bold;
+}
+
+#upcoming-events p.bold {
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+#upcoming-events p.bold:after {
+    content: '';
+    border-bottom: 1px solid black;
+    display: block;
+    width: 125px;
+    margin-top: 7px
+}
+
+hr.vertical {
+    width: 1px;
+    height: 45px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+hr.vertical2 {
+    width: 1px;
+    height: 160px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* SECTION 5 - HISTORY */
+
+#history {
+    background-image: url('../images/history-bg-small.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 900px;
+    background-position: 0px 20px;
+}
+
+.dates {
+    top: 220px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2000px;
+}
+
+.dates h3 {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 3px;
+    position: relative
+}
+
+#history .centered-text {
+    width: 250px;
+    margin: 100px auto 0;
+    padding: 40px
+}
+
+.dates img {
+    margin-top: -12px;
+}
+
+.intro img {
+    display: inline-block;
+}
+
+footer {
+    padding-top: 30px;
+    background-image: url('../images/footer-bg-small.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 862px !important;
+}
+
+footer .strikeout::after {
+    border-bottom: 1px solid #9e9898;
+    position: absolute;
+    content: "";
+    left: -5%;
+    right: -100%;
+    top: 50%;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 80%;
+    color: #798285;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    border-bottom: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 0px;
+    text-align: left;
+}
+
+footer i.fa {
+    display: block;
+    width: 30px;
+    margin-bottom: 53px;
+    margin-left: 15px;
+}
+
+footer i.fa:first-child {
+    margin-top: 5px;
+}
+
+footer i.fa:last-child {
+    margin-bottom: 5px;
+}
+
+.footer-icons {
+    display: inline-block;
+    margin-top: 27px;
+    border-left: 1px solid black;
+}
+
+@media (min-width: 768px) {
+    #discography .bottom-bg-image {
+        height: 700px;
+        background-image: url('../images/discography_med.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -200px;
+    }
+   
+    footer {
+        background-image: url('../images/footer-bg-md.png');
+        background-position: cover;
+        background-repeat: no-repeat;
+        height: 1000px !important;
+        background-position: 0 300px;
+        padding-top: 30px;
+    }
+    #new-tracks .number-boxes {
+        width: 700px;
+        margin: 0 auto;
+    }
+    #new-tracks .box {
+        width: 340px;
+        margin-bottom: 20px;
+        height: 370px;
+    }
+    #new-tracks .number-1 {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    #new-tracks .number-3 {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    #new-tracks .number-5 {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    
+    .arrow-down {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #f5f6f6;
+        left: 50%;
+        top: 0;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+    
+    #history {
+    background-image: url('../images/history-bg-med.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center  -50px;
+    height: 1000px;
+    }
+    
+    #latter-compositions .button {
+    padding: 15px 30px;
+    font-size: 0.720em;
+}
+    #latter-compositions .text{
+        padding: 10px 20px;
+    }
+    
+    #latter-compositions .comp-text{
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    #discography .year {
+        margin-top: 0px;
+    }
+    
+    #discography .intro-text{
+        margin-bottom: 50px;
+    }
+    
+    #discography .image {
+        margin-bottom: 50px;
+        text-align: left
+    }
+    #discography .bottom-bg-image {
+        height: 700px;
+        background-image: url('../images/discography_big.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -200px
+    }
+    
+    #discography .play-button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    display: flex;
+    color: black;;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 75px;
+}
+
+    #history {
+    background-image: url('../images/history-bg-big.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 1000px;
+}
+    footer {
+        background-image: url('../images/footer-bg-big.png');
+        background-position: cover;
+        background-repeat: no-repeat;
+        height: 1000px !important;
+        background-position: 0 300px;
+    }
+    .arrow-down {
+        display: none;
+    }
+    .arrow-right {
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid #f5f6f6;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+    #new-tracks .number-boxes {
+        width: 950px;
+        margin: 0 auto;
+    }
+    #new-tracks .box {
+        width: 310px;
+        margin-bottom: 10px;
+        height: 350px;
+    }
+    #new-tracks .number-1 {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    #new-tracks .number-2 {
+        margin-right: 10px;
+    }
+    #new-tracks .number-3 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    #new-tracks .number-4 {
+        margin-right: 10px;
+    }
+    #new-tracks .number-5 {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    .number-6 {
+        margin-right: 0;
+    }
+    #latter-compositions .text {
+        margin: 0 auto;
+    }
+    #latter-compositions .box1,
+    #latter-compositions .box2,
+    #latter-compositions .box3 {
+        max-width: 970px;
+        margin: 0 auto;
+    }
+    #latter-compositions .col-md-6.image {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #latter-compositions .box2 .md-float-left {
+        float: left !important;
+    }
+    #latter-compositions .box2 .md-float-right {
+        float: right !important;
+    }
+    #latter-compositions .box2 .comp-text {
+        margin-bottom: 30px;
+    }
+    .arrow-left {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid #f5f6f6;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}
+
+h2 {
+    -webkit-transition: all 0.7s ease-out 0.6s;
+    -moz-transition: all 0.7s ease-out 0.6s;
+    -o-transition: all 0.7s ease-out 0.6s;
+    -ms-transition: all 0.7s ease-out 0.6s;
+    transition: all 0.7s ease-out 0.6s;
+}
+
+@media (max-width: 2000px) {
+    .concert-bg {
+        position: relative;
+        background-image: url('../images/concert-med.png');
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 480px;
+    }
+    #concert-tours .text-left {
+        margin-top: 110px;
+        margin-left: 10px;
+    }
+    #concert-tours .darker-gray {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .concert-bg {
+        position: relative;
+        background-image: url('../images/concert-med.png');
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 480px;
+    }
+    #concert-tours .text-left {
+        margin-top: 120px;
+        margin-left: 10px
+    }
+    #concert-tours .darker-gray {
+        width: 460px;
+    }
+}
+
+@media (max-width: 768px) {
+    .concert-bg {
+        background-image: url('../images/concert-small.png');
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 480px;
+    }
+    #concert-tours .text-left {
+        margin-top: 130px;
+    }
+    #concert-tours .title {
+        margin-bottom: 50px;
+    }
+    #concert-tours .darker-gray {
+        width: 460px;
+    }
+}
+
+@media (max-width: 576px) {
+    .concert-bg {
+        position: relative;
+        background-image: url('../images/concert-xs.png');
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 750px;
+    }
+    #concert-tours .text-left {
+        margin-top: 330px;
+    }
+    #concert-tours .darker-gray {
+        width: 290px;
+    }
+    
+    #history {
+        background-position: center 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .concert-bg {
+        position: relative;
+        background-image: url('../images/concert-xxs.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -140px 0px;
+    }
+    #concert-tours .text-left {
+        margin-top: 230px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    #concert-tours .darker-gray {
+        width: 180px;
+    }
+    #concert-tours .button {
+        padding: 10px 20px;
+        font-size: 0.688em;
+    }
+}
+
+@media (max-width: 380px) {
+    #latter-compositions .icons {
+    font-size: 0.6em;
+    margin-top: 8px;
+    color: #aaabab;
+    margin-left: -20px;
+}
+    #latter-compositions .button {
+    padding: 5px 5px;
+    font-size: 0.6em;
+}
+
+}
+
